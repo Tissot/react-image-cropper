@@ -1,0 +1,82 @@
+.react-image-cropper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: min-100vh;
+  
+  & * {
+    box-sizing: border-box;
+  }
+
+  & .drawer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background-color: #eee;
+    border: #aaa solid 1px;
+
+    & .cropper-resizer {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border: 1px solid #000;
+      background-color: #fff;
+      z-index: 200;
+    }
+
+    & .top-left-resizer {
+      top: -4px;
+      left: -4px;
+      cursor: nwse-resize;
+    }
+
+    & .top-resizer {
+      top: -4px;
+      left: 50%;
+      transform: translateX(-4px);
+      cursor: ns-resize;
+    }
+
+    & .top-right-resizer {
+      top: -4px;
+      right: -4px;
+      cursor: nesw-resize;
+    }
+
+    & .left-resizer {
+      top: 50%;
+      left: -4px;
+      transform: translateY(-4px);
+      cursor: ew-resize;
+    }
+
+    & .right-resizer {
+      top: 50%;
+      right: -4px;
+      transform: translateY(-4px);
+      cursor: ew-resize;
+    }
+
+    & .bottom-left-resizer {
+      bottom: -4px;
+      left: -4px;
+      cursor: nesw-resize;
+    }
+
+    & .bottom-resizer {
+      bottom: -4px;
+      left: 50%;
+      transform: translateX(-4px);
+      cursor: ns-resize;
+    }
+
+    & .bottom-right-resizer {
+      bottom: -4px;
+      right: -4px;
+      cursor: nwse-resize;
+    }
+  }
+}
